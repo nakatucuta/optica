@@ -1,0 +1,16 @@
+<?php
+
+use Illuminate\Database\Seeder;
+use App\Models\refractive\Refractive;
+class RefractivesTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        factory(Refractive::class, 80)->create();
+    }
+}
